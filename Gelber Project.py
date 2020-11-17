@@ -123,7 +123,7 @@ s_and_p = ['MMM','ABT','ABBV','ACN','ATVI','AYI','ADBE','AMD','AAP','AES','AET',
 		'VMC','WMT','WBA','DIS','WM','WAT','WEC','WFC','WDC','WU','WY','WHR','WMB',
 		'WLTW','WYNN','XEL','XRX','XLNX','XL','XYL','YUM','ZBH','ZION','ZTS']
 
-# Keep stocks with ipo dates later than 1-01-1994
+# Keep stocks with ipo dates earlier than 1-01-1994
 stocks = pd.DataFrame()
 x = pd.read_csv('AdvancedBigDataAnalytics/Final/Data/Stocks/CI_data.csv').drop(['Open','High','Low','Close','Adj Close', 'Volume', 'Name'], axis = 1)
 stocks['Date'] = x['Date']
